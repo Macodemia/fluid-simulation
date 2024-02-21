@@ -1,0 +1,28 @@
+TOTAL_SECONDS_TO_SIMULATE: 3.0
+
+EXPLICIT MAX_TIMESTEP_SIZE: 0.001
+IMPLICIT MAX_TIMESTEP_SIZE: 0.003
+
+IMPLICIT CONSTRAINT_ITERATIONS: 10
+EXPLICIT STIFFNESS_B: 2500
+
+EXPLICIT VISCOSITY_V_f: 0.100
+EXPLICIT VISCOSITY_V_b: 0.100
+IMPLICIT VISCOSITY_V_f: 0.100
+IMPLICIT VISCOSITY_V_b: 0.100
+
+COHESION: 0.0
+ADHESION: 0.0
+
+FluidBox:
+width: 2
+height: 1.5
+depth: 2
+numberOfParticles: 100000
+offset: -1.5 1.5 -1
+
+BoundaryMesh:
+file: ../../../scenarios/rotated_plane.obj
+samplingDistance: 0.07
+offset: 0 0 0
+scale: 4.0

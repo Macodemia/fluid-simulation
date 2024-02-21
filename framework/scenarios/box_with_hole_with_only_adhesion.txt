@@ -1,0 +1,42 @@
+TOTAL_SECONDS_TO_SIMULATE: 4.0
+
+EXPLICIT MAX_TIMESTEP_SIZE: 0.001
+IMPLICIT MAX_TIMESTEP_SIZE: 0.004
+
+IMPLICIT CONSTRAINT_ITERATIONS: 15
+EXPLICIT STIFFNESS_B: 1750
+
+EXPLICIT VISCOSITY_V_f: 0.015
+EXPLICIT VISCOSITY_V_b: 0.0015
+IMPLICIT VISCOSITY_V_f: 0.015
+IMPLICIT VISCOSITY_V_b: 0.0015
+
+EXPLICIT COHESION: 0.0
+IMPLICIT COHESION: 0.0
+EXPLICIT ADHESION: 4.0
+IMPLICIT ADHESION: 4.0
+
+FluidBox:
+width: 2
+height: 0.5
+depth: 1.5
+numberOfParticles: 200000
+offset: -0.875 0.03 -1.8
+
+BoundaryMesh:
+file: ../../../scenarios/box_with_hole.obj
+samplingDistance: 0.0225
+offset: 0 0 0
+scale: 2
+
+BoundaryMesh:
+file: ../../../scenarios/box_with_hole_sphere.obj
+samplingDistance: 0.02
+offset: 0 0 0
+scale: 2
+
+BoundaryMesh:
+file: ../../../scenarios/box_with_hole_container.obj
+samplingDistance: 0.0275
+offset: 0 0 0
+scale: 2

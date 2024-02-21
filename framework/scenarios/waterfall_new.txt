@@ -1,0 +1,71 @@
+TOTAL_SECONDS_TO_SIMULATE: 10.0
+
+EXPLICIT MAX_TIMESTEP_SIZE: 0.001
+IMPLICIT MAX_TIMESTEP_SIZE: 0.003
+
+IMPLICIT CONSTRAINT_ITERATIONS: 15
+EXPLICIT STIFFNESS_B: 2500
+
+EXPLICIT VISCOSITY_V_f: 0.000
+EXPLICIT VISCOSITY_V_b: 0.000
+IMPLICIT VISCOSITY_V_f: 0.050
+IMPLICIT VISCOSITY_V_b: 0.010
+
+COHESION: 0.15
+ADHESION: 5.0
+
+FluidBox:
+width: 2.5
+height: 1
+depth: 6
+numberOfParticles: 1000000
+offset: -1.33 0.4 -1.625
+rotation: 0.14 0 0
+
+BoundaryMesh:
+file: ../../../scenarios/waterfall_new_top_cylinder.obj
+samplingDistance: 0.02
+offset: 0 0 0
+scale: 1.0
+
+BoundaryMesh:
+file: ../../../scenarios/waterfall_new_back_plane.obj
+samplingDistance: 0.02
+offset: 0 0 0
+scale: 1.0
+
+BoundaryMesh:
+file: ../../../scenarios/waterfall_new_surrounding_box.obj
+samplingDistance: 0.02
+offset: 0 0 0
+scale: 1.0
+
+BoundaryMesh:
+file: ../../../scenarios/waterfall_new_top_stair.obj
+samplingDistance: 0.02
+offset: 0 0 0
+scale: 1.0
+
+BoundaryMesh:
+file: ../../../scenarios/waterfall_new_middle_stair.obj
+samplingDistance: 0.02
+offset: 0 0 0
+scale: 1.0
+
+BoundaryMesh:
+file: ../../../scenarios/waterfall_new_bottom_stair.obj
+samplingDistance: 0.02
+offset: 0 0 0
+scale: 1.0
+
+BoundaryMesh:
+file: ../../../scenarios/waterfall_new_rock_box.obj
+samplingDistance: 0.02
+offset: 0 0 0
+scale: 1.0
+
+BoundaryMesh:
+file: ../../../scenarios/waterfall_new_rock_cone.obj
+samplingDistance: 0.02
+offset: 0 0 0
+scale: 1.0

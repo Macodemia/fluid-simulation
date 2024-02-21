@@ -1,0 +1,43 @@
+TOTAL_SECONDS_TO_SIMULATE: 3.0
+
+EXPLICIT MAX_TIMESTEP_SIZE: 0.002
+IMPLICIT MAX_TIMESTEP_SIZE: 0.006
+
+IMPLICIT CONSTRAINT_ITERATIONS: 4
+EXPLICIT STIFFNESS_B: 3000
+
+EXPLICIT VISCOSITY_V_f: 0.005
+EXPLICIT VISCOSITY_V_b: 0.003
+IMPLICIT VISCOSITY_V_f: 0.000
+IMPLICIT VISCOSITY_V_b: 0.000
+
+COHESION: 0.0 
+ADHESION: 0.0
+
+FluidBox:
+width: 1
+height: 2
+depth: 1
+numberOfParticles: 10000
+offset: 0.257 1.0 0.25
+
+BoundaryBox:
+width: 1
+height: 0.02
+depth: 1
+samplingDistance: 0.02
+offset: 0.257 1.0 0.25
+
+BoundaryBox:
+width: 3.5
+height: 2.5
+depth: 1.5
+samplingDistance: 0.02
+offset: 0 0 0
+
+BoundaryBox:
+width: 0.75
+height: 1.25
+depth: 0.75
+samplingDistance: 0.02
+offset: 1.5 0 0.375
